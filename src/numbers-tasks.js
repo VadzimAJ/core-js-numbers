@@ -393,8 +393,9 @@ function toExponential(number, fractionDigits) {
  * 12345, 2    => '12345.00'
  * 12.345, 1   => '12.3'
  */
-function toFixed(/* number, fractionDigits */) {
-  throw new Error('Not implemented');
+function toFixed(number, fractionDigits) {
+  const pointFixer = number.toFixed(fractionDigits);
+  return pointFixer;
 }
 
 /**
@@ -444,8 +445,12 @@ function getNumberValue(number) {
  * 5        => true
  * '5'      => false
  */
-function isNumber(/* number */) {
-  throw new Error('Not implemented');
+function isNumber(number) {
+  const numberType =
+    typeof number === 'number' &&
+    !Number.isNaN(number) &&
+    Number.isFinite(number);
+  return numberType;
 }
 
 /**
