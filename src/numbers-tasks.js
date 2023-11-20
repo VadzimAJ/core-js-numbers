@@ -289,7 +289,7 @@ function getFibonacciNumber(index) {
 /**
  * Returns the sum of all numbers from 1 to n.
  *
- * @param {number} n
+ * @param {number}
  * @return {number}
  *
  * @example:
@@ -297,8 +297,9 @@ function getFibonacciNumber(index) {
  *   10 => 55 // (1+2+3+...+10)
  *   1  => 1
  */
-function getSumToN(/* n */) {
-  throw new Error('Not implemented');
+function getSumToN(n) {
+  const megaSum = (n * (n + 1)) / 2;
+  return megaSum;
 }
 
 /**
