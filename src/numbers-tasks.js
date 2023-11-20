@@ -377,8 +377,9 @@ function numberToStringInBase(number, base) {
  * @example:
  * 12345, 2    => '1.23e+4'
  */
-function toExponential(/* number, fractionDigits */) {
-  throw new Error('Not implemented');
+function toExponential(number, fractionDigits) {
+  const exponenta = number.toExponential(fractionDigits);
+  return exponenta;
 }
 
 /**
