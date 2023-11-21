@@ -544,8 +544,9 @@ function roundToSmallestInteger(number) {
  * 5.1  => 6
  * -5.9 => -5
  */
-function roundToLargestInteger(/* number */) {
-  throw new Error('Not implemented');
+function roundToLargestInteger(number) {
+  const ceil = Math.ceil(number);
+  return ceil;
 }
 
 /**
