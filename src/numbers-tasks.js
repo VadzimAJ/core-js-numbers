@@ -347,8 +347,8 @@ function isPowerOfTwo(num) {
  *   0 => 0
  *   Math.PI / 2 => 1
  */
-function getSine(/* num */) {
-  throw new Error('Not implemented');
+function getSine(num) {
+  return Math.sin(num);
 }
 
 /**
@@ -660,8 +660,15 @@ function getHypotenuse(a, b) {
  * 10 => 5
  * 15 => 8
  */
-function getCountOfOddNumbers(/* number */) {
-  throw new Error('Not implemented');
+function getCountOfOddNumbers(number) {
+  const positiver = Math.abs(number);
+  const oddAcc = [];
+  for (let i = 0; i < positiver; i += 1) {
+    if (i % 2 === 0) {
+      oddAcc.push(i);
+    }
+  }
+  return oddAcc.length;
 }
 
 module.exports = {
